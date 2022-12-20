@@ -1,0 +1,32 @@
+.about-bgImg-container {
+  @include bgImage(60vh, "../../img/model-1.jpg");
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 1rem;
+
+  .about__bio-image {
+    p {
+      margin: 1rem;
+    }
+  }
+}
+.about {
+  &__container {
+    width: 70vw;
+    margin: 2rem auto;
+  }
+  .about__job {
+    margin: 1rem;
+    background: lighten($primary-color, 10%);
+    border-bottom: 5px solid $secondary-color;
+    padding: 1rem;
+
+    h3 {
+      margin: 0.5rem 0;
+    }
+    h4 {
+      margin: 0.3rem 0;
+    }
+  }
+}
